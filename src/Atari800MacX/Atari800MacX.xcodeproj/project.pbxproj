@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -299,7 +299,6 @@
 		2DC051B6106962C600B9657B /* MemoryEditorByteFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC051B0106962C600B9657B /* MemoryEditorByteFieldCell.m */; };
 		2DC051B7106962C600B9657B /* MemoryEditorDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC051B1106962C600B9657B /* MemoryEditorDataSource.h */; };
 		2DC051B8106962C600B9657B /* MemoryEditorDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC051B2106962C600B9657B /* MemoryEditorDataSource.m */; };
-		2DC1975109B69F6200906A5A /* Atari800MacX.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 2DC1975009B69F6200906A5A /* Atari800MacX.xcconfig */; };
 		2DC223D3106B04A20096626C /* DisasmDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC223D1106B04A20096626C /* DisasmDataSource.h */; };
 		2DC223D4106B04A20096626C /* DisasmDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC223D2106B04A20096626C /* DisasmDataSource.m */; };
 		2DC936CC10701D5B0075BCBD /* Breakpoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DC936CA10701D5B0075BCBD /* Breakpoint.h */; };
@@ -1285,8 +1284,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 2DD86A1809B559B00088C6D3 /* Build configuration list for PBXProject "Atari800MacX" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -1346,7 +1348,6 @@
 				2DAEDB6C09B69AED005FF181 /* PrintOutputConfirmBrushed.nib in Resources */,
 				2DAEDB6D09B69AED005FF181 /* SectorEditorWindow.nib in Resources */,
 				2DAEDB6E09B69AED005FF181 /* SectorEditorWindowBrushed.nib in Resources */,
-				2DC1975109B69F6200906A5A /* Atari800MacX.xcconfig in Resources */,
 				2D04E2810C640BB100FCB70F /* diskette.tiff in Resources */,
 				2D54B79310684FD800892FE1 /* go.png in Resources */,
 				2D9627A9106C3CC00081F384 /* Breakpoint.png in Resources */,
@@ -1510,6 +1511,7 @@
 		2DAEDBCE09B69AED005FF181 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					.,
@@ -1518,10 +1520,11 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = "";
+				GCC_VERSION_i386 = "";
+				GCC_VERSION_ppc = "";
 				HEADER_SEARCH_PATHS = (
 					..,
 					"GUIlib-1.1.1",
@@ -1530,6 +1533,8 @@
 				INFOPLIST_FILE = "Info-Atari800MacX.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET_i386 = "";
+				MACOSX_DEPLOYMENT_TARGET_ppc = "";
 				OTHER_LDFLAGS = (
 					"\U0001-framework",
 					SDL,
@@ -1538,6 +1543,8 @@
 				);
 				PRODUCT_NAME = Atari800MacX;
 				SDKROOT = macosx;
+				SDKROOT_i386 = "";
+				SDKROOT_ppc = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1545,13 +1552,14 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = YES;
+				ZERO_LINK = "";
 			};
 			name = Development;
 		};
 		2DAEDBCF09B69AED005FF181 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					.,
@@ -1559,8 +1567,9 @@
 					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_1)",
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_VERSION_i386 = "";
+				GCC_VERSION_ppc = "";
 				HEADER_SEARCH_PATHS = (
 					..,
 					"GUIlib-1.1.1",
@@ -1569,6 +1578,8 @@
 				INFOPLIST_FILE = "Info-Atari800MacX.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET_i386 = "";
+				MACOSX_DEPLOYMENT_TARGET_ppc = "";
 				OTHER_LDFLAGS = (
 					"\U0001-framework",
 					SDL,
@@ -1577,6 +1588,8 @@
 				);
 				PRODUCT_NAME = Atari800MacX;
 				SDKROOT = macosx;
+				SDKROOT_i386 = "";
+				SDKROOT_ppc = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1584,13 +1597,14 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = app;
-				ZERO_LINK = NO;
+				ZERO_LINK = "";
 			};
 			name = Deployment;
 		};
 		2DAEDBD009B69AED005FF181 /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
 					.,
 					"$(HOME)/Library/Frameworks",
@@ -1600,6 +1614,8 @@
 				);
 				FRAMEWORK_SEARCH_PATHS_QUOTED_1 = "\"$(SRCROOT)\"";
 				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_VERSION_i386 = "";
+				GCC_VERSION_ppc = "";
 				HEADER_SEARCH_PATHS = (
 					..,
 					"GUIlib-1.1.1",
@@ -1608,6 +1624,8 @@
 				INFOPLIST_FILE = "Info-Atari800MacX__Upgraded_-1.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
+				MACOSX_DEPLOYMENT_TARGET_i386 = "";
+				MACOSX_DEPLOYMENT_TARGET_ppc = "";
 				OTHER_LDFLAGS = (
 					"\U0001-framework",
 					SDL,
@@ -1616,6 +1634,8 @@
 				);
 				PRODUCT_NAME = Atari800MacX;
 				SDKROOT = macosx;
+				SDKROOT_i386 = "";
+				SDKROOT_ppc = "";
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = (
 					"-Wmost",
@@ -1623,6 +1643,7 @@
 					"-Wno-unknown-pragmas",
 				);
 				WRAPPER_EXTENSION = app;
+				ZERO_LINK = "";
 			};
 			name = Default;
 		};
