@@ -37,6 +37,7 @@ extern int joystick1_nsticks, joystick1_nhats;
 extern int joystick2_nsticks, joystick2_nhats;
 extern int joystick3_nsticks, joystick3_nhats;
 
+extern double sound_volume;
 extern void PauseAudio(int pause);
 extern int requestPrefsChange;
 extern int configurationChanged;
@@ -677,6 +678,7 @@ static Preferences *sharedInstance = nil;
 - (void)updateUI {
     int index;
 	int i,j,foundMatch;
+	double aFloat;
 	NSColor *pen1, *pen2, *pen3, *pen4, *fore, *back;
 	NSString *portName;
 
@@ -772,6 +774,11 @@ static Preferences *sharedInstance = nil;
     [xep80ForegroundField setIntValue:[[displayedValues objectForKey:XEP80OnColor] intValue]];
     [xep80BackgroundField setIntValue:[[displayedValues objectForKey:XEP80OffColor] intValue]];
 	[enableSoundButton setState:[[displayedValues objectForKey:EnableSound] boolValue] ? NSOnState : NSOffState];
+	aFloat = [[displayedValues objectForKey:SoundVolume] floatValue]; // EER1
+	if (aFloat != sound_volume) {
+		aFloat = sound_volume;
+	}
+	[soundVolumeSlider setFloatValue:aFloat];
 #if 0 /* enableHifiSound is deprecated from 4.2.2 on */    
     [enableHifiSoundButton setState:[[displayedValues objectForKey:EnableHifiSound] boolValue] ? NSOnState : NSOffState];
 #endif
@@ -1953,6 +1960,9 @@ static Preferences *sharedInstance = nil;
         [displayedValues setObject:yes forKey:EnableSound];
     else
         [displayedValues setObject:no forKey:EnableSound];
+	aFloat = [soundVolumeSlider floatValue]; // EER1
+	[displayedValues setObject:[NSNumber numberWithFloat:aFloat] 
+						forKey:SoundVolume];
 #if 0 /* enableHifiSound is deprecated from 4.2.2 on */    
     if ([enableHifiSoundButton state] == NSOnState)
         [displayedValues setObject:yes forKey:EnableHifiSound];

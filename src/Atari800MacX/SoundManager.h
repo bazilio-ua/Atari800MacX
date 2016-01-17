@@ -25,4 +25,6 @@
 - (IBAction)stereoSound:(id)sender;
 - (IBAction)increaseVolume:(id)sender;
 - (IBAction)decreaseVolume:(id)sender;
+- (IBAction)updateVolumeMenu:(id)sender;
+
 @end

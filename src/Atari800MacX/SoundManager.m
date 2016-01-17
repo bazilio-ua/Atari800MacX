@@ -41,6 +41,10 @@ void SoundManagerDecreaseVolume() {
     [[SoundManager sharedInstance] decreaseVolume:nil];
 }
 
+void SoundManagerUpdateVolumeMenu() {
+	[[SoundManager sharedInstance] updateVolumeMenu:nil];
+}
+
 void SoundManagerRecordingDo() {
     [[SoundManager sharedInstance] soundRecording:nil];
 }
@@ -168,12 +172,19 @@ static SoundManager *sharedInstance = nil;
 /*------------------------------------------------------------------------------
  *  decreaseVolume - This method handles the decrease volume menu selection.
  *-----------------------------------------------------------------------------*/
-- (IBAction)decreaseVolume:(id)sender;
+- (IBAction)decreaseVolume:(id)sender
 {
 	if (sound_volume > 0.0)
 		sound_volume -= 0.05;
 	[self setSoundStereoMenu];
 }
 
+/*------------------------------------------------------------------------------
+ *  updateVolumeMenu - This method handles the update volume menu label. // EER1
+ *-----------------------------------------------------------------------------*/
+- (IBAction)updateVolumeMenu:(id)sender
+{
+	[self setSoundStereoMenu];
+}
 
 @end

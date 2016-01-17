@@ -37,6 +37,7 @@ extern void SaveMedia(char disk_filename[][FILENAME_MAX],
 			   char cart_filename[FILENAME_MAX],
 			   char cart2_filename[FILENAME_MAX]);
 extern void PrintOutputControllerSelectPrinter(int printer);
+extern void SoundManagerUpdateVolumeMenu(void);
 
 extern char Devices_h_exe_path[FILENAME_MAX];
 extern int useBuiltinPalette;
@@ -285,6 +286,7 @@ void savePrefs() {
 	prefssave.xep80_enabled = XEP80_enabled;
     prefssave.enableSound = sound_enabled;
 	prefssave.soundVolume = sound_volume;
+	SoundManagerUpdateVolumeMenu(); // EER1
     prefssave.enableStereo = POKEYSND_stereo_enabled; 
 	prefssave.mediaStatusDisplayed = mediaStatusWindowOpen;
 	prefssave.functionKeysDisplayed = functionKeysWindowOpen;
@@ -862,6 +864,7 @@ int loadMacPrefs(int firstTime)
 	XEP80_FONTS_offcolor = prefs.xep80_offcolor;
     sound_enabled = prefs.enableSound;
 	sound_volume = prefs.soundVolume;
+	SoundManagerUpdateVolumeMenu(); // EER1
     POKEYSND_stereo_enabled = prefs.enableStereo;
     POKEYSND_console_sound_enabled = prefs.enableConsoleSound;
     POKEYSND_serio_sound_enabled = prefs.enableSerioSound;
