@@ -3,7 +3,7 @@
 
 #include <string.h>
 
-#include "SDL.h"
+#include <SDL/SDL.h>
 
 class GUI_Font
 {

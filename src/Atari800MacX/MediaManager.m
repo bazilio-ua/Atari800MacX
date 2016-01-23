@@ -30,7 +30,7 @@
 #import "sio.h"
 #import "memory.h"
 #import "stdio.h"
-#import "SDL.h"
+#import <SDL/SDL.h>
 #import "esc.h"
 #import <sys/stat.h>
 #import <unistd.h>

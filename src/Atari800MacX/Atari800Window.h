@@ -26,13 +26,14 @@
 @end
 
 /* Delegate for our NSWindow to send SDLQuit() on close */
-@interface Atari800WindowDelegate : NSObject
+@interface Atari800WindowDelegate : NSObject <NSWindowDelegate>
 {}
 - (BOOL)windowShouldClose:(id)sender;
 @end
 
 /* Subclass of NSQuickDrawView for the window's subview */
-@interface Atari800WindowView : NSQuickDrawView
+//@interface Atari800WindowView : NSQuickDrawView
+@interface Atari800WindowView : NSView
 {}
 @end
 

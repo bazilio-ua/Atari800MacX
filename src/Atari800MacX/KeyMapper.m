@@ -5,7 +5,7 @@
  */
 
 #import "KeyMapper.h"
-#import "SDL.h"
+#import <SDL/SDL.h>
 
 
 @implementation KeyMapper

@@ -1,7 +1,7 @@
 
 #include <stdlib.h>
 
-#include "SDL.h"
+#include <SDL/SDL.h>
 #include "GUI_font.h"
 #include "GUI_loadimage.h"
 

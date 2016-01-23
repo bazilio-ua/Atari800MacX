@@ -28,8 +28,8 @@
 */
 
 
-#include <SDL.h>
-#include <SDL_opengl.h>
+#include <SDL/SDL.h>
+#include <SDL/SDL_opengl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -812,6 +812,10 @@ void SetVideoMode(int w, int h, int bpp)
 			// Create window, as old one is destroyed by SDL
 			Atari800WindowCreate(w,h);	
 			MainGLScreen = SDL_SetVideoMode(w, h, 0, SDL_OPENGL);
+			if ( MainGLScreen == NULL ) {
+				fprintf(stderr, "Couldn't set %dx%dx0 video mode: %s\n", w, h, SDL_GetError());
+				exit(1);
+			}			
 			
 			glPushAttrib(GL_ENABLE_BIT);
 

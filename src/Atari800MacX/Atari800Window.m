@@ -10,7 +10,7 @@
 */
 #import "Atari800Window.h"
 #import "SDLMain.h"
-#import "SDL.h"
+#import <SDL/SDL.h>
 #import "Preferences.h"
 #import "PasteManager.h"
 
@@ -110,7 +110,7 @@ void Atari800MakeKeyWindow(void) {
      [ our_window registerForDraggedTypes:[NSArray arrayWithObjects:
             NSFilenamesPboardType, nil]]; // Register for Drag and Drop
 	
-#define USE_QUICK_DRAW	
+//#define USE_QUICK_DRAW	
 #ifdef USE_QUICK_DRAW
      /* Create thw window view and display it */
      our_window_view = [ [ Atari800WindowView alloc ] initWithFrame:contentRect ];
@@ -125,14 +125,14 @@ void Atari800MakeKeyWindow(void) {
 	 sprintf(tempStr,"%d",(int)our_window_view);
 	 setenv("SDL_NSQuickDrawViewPointer",tempStr,1);     
 #else
-	our_window_view = [[ [ NSView alloc ] initWithFrame:contentRect ] autorelease];
+	our_window_view = [[ [ Atari800WindowView alloc ] initWithFrame:contentRect ] autorelease];
 	[ our_window setContentView: our_window_view ];
 	
 	/* Pass the window pointers to libSDL through environment variables */
-	sprintf(tempStr,"%d",(int)our_window);
-	setenv("SDL_NSWindowPointer",tempStr,1);
-	sprintf(tempStr,"%d",(int)our_window_view);
-	setenv("SDL_NSQuartzViewPointer",tempStr,1);     
+//	sprintf(tempStr,"%d",(int)our_window);
+//	setenv("SDL_NSWindowPointer",tempStr,1);
+//	sprintf(tempStr,"%d",(int)our_window_view);
+//	setenv("SDL_NSViewPointer",tempStr,1);     
 #endif	
 }
 

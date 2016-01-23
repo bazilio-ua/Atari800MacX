@@ -24,7 +24,7 @@
 
 #include <string.h>
 
-#include "SDL.h"
+#include <SDL/SDL.h>
 #include "GUI_button.h"
 #include "GUI_loadimage.h"
 

@@ -16,7 +16,7 @@
 #include "input.h"
 #include "memory.h"
 #include "preferences_c.h"
-#include "SDL.h"
+#include <SDL/SDL.h>
 #include "sio.h"
 #include "cassette.h"
 #include "cartridge.h"

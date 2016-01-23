@@ -8,7 +8,7 @@
 
 */
 #import <Cocoa/Cocoa.h>
-#import <SDL.h>
+#import <SDL/SDL.h>
 #import "preferences_c.h"
 #import "Preferences.h"
 #import "MediaManager.h"

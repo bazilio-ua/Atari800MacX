@@ -27,8 +27,8 @@
 #ifndef _GUI_h
 #define _GUI_h
 
-#include "SDL.h"
-#include "SDL_opengl.h"
+#include <SDL/SDL.h>
+#include <SDL/SDL_opengl.h>
 #include "GUI_status.h"
 #include "GUI_widget.h"
 

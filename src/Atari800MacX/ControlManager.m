@@ -18,7 +18,7 @@
 #import "MemoryEditorTableView.h"
 #import "memory.h"
 #import "monitor.h"
-#import "SDL.h"
+#import <SDL/SDL.h>
 #import "cpu.h"
 #import <stdarg.h>
 

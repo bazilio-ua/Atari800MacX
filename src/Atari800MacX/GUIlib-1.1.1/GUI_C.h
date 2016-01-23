@@ -27,10 +27,10 @@
 #ifndef _GUI_C_h
 #define _GUI_C_h
 
-#include "SDL.h"
+#include <SDL/SDL.h>
 #include "GUI_status.h"
 
-#include "begin_code.h"
+#include <SDL/begin_code.h>
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -88,6 +88,6 @@ extern void GUI_Destroy(CGUI *gui);
 #ifdef __cplusplus
 };
 #endif
-#include "close_code.h"
+#include <SDL/close_code.h>
 
 #endif /* _GUI_C_h */

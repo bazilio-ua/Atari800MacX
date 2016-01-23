@@ -30,7 +30,7 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-#include "SDL.h"
+#include <SDL/SDL.h>
 #include "GUI_status.h"
 
 

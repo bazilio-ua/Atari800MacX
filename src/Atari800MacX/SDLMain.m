@@ -9,7 +9,7 @@
     Feel free to customize this file to suit your needs
 */
 
-#import "SDL.h"
+#import <SDL/SDL.h>
 #import "SDLMain.h"
 #import "Atari800Window.h"
 #import "Preferences.h"
