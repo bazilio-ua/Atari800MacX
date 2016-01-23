@@ -1400,7 +1400,7 @@ static Preferences *sharedInstance = nil;
     int mouseCount = 0;
     int firstMouse = 0;
 	NSColor *penColor;
-	float penRed, penBlue, penGreen, penAlpha;
+	CGFloat penRed, penBlue, penGreen, penAlpha;
 	int type, typever4;
     
     static NSNumber *yes = nil;

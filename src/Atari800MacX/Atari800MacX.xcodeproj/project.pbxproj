@@ -1621,7 +1621,7 @@
 					"GUIlib-1.1.1",
 					./SDL.framework/Versions/A/Headers,
 				);
-				INFOPLIST_FILE = "Info-Atari800MacX__Upgraded_-1.plist";
+				INFOPLIST_FILE = "Info-Atari800MacX.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET_i386 = "";
@@ -1674,6 +1674,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = "";
 				GCC_VERSION_i386 = "";
 				GCC_VERSION_ppc = "";
@@ -1691,6 +1692,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_VERSION = "";
 				GCC_VERSION_i386 = "";
 				GCC_VERSION_ppc = "";
