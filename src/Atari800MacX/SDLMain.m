@@ -92,10 +92,11 @@ int SDLMainIsActive() {
 - (NSString *)stringByReplacingRange:(NSRange)aRange with:(NSString *)aString;
 @end
 
-@interface SDLApplication : NSApplication
+@interface NSApplication (SDLApplication)
+- (void)terminate:(id)sender;
 @end
 
-@implementation SDLApplication
+@implementation NSApplication (SDLApplication)
 /* Invoked from the Quit menu item */
 - (void)terminate:(id)sender
 {
@@ -324,7 +325,8 @@ int main (int argc, char **argv)
        directories are set correctly */
     [Preferences setWorkingDirectory:gArgv[0]];
 
-    [SDLApplication poseAsClass:[NSApplication class]];
+//    [SDLApplication poseAsClass:[NSApplication class]];
     NSApplicationMain (argc, (const char **) argv);
+	
     return 0;
 }
