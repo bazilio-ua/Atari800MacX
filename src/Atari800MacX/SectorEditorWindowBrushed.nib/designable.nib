@@ -703,7 +703,7 @@
 							<object class="NSTextFieldCell" key="NSCell" id="174945440">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">4194304</int>
-								<string type="base64-UTF8" key="NSContents">U2VjdG9yIDAwMDAxIG9mIDEwMDAwCgo</string>
+								<string key="NSContents">Sector 00001 of 10000</string>
 								<reference key="NSSupport" ref="100390004"/>
 								<reference key="NSControlView" ref="581919291"/>
 								<object class="NSColor" key="NSBackgroundColor" id="547936645">

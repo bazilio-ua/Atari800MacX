@@ -74,14 +74,12 @@
 											<int key="NSvFlags">256</int>
 											<string key="NSFrameSize">{714, 311}</string>
 											<reference key="NSSuperview" ref="1073596539"/>
-											<reference key="NSWindow"/>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="847120676">
 												<reference key="NSNextResponder" ref="458542650"/>
 												<int key="NSvFlags">256</int>
 												<string key="NSFrameSize">{714, 17}</string>
 												<reference key="NSSuperview" ref="458542650"/>
-												<reference key="NSWindow"/>
 												<reference key="NSTableView" ref="459613446"/>
 											</object>
 											<object class="_NSCornerView" key="NSCornerView" id="839761555">
@@ -89,7 +87,6 @@
 												<int key="NSvFlags">-2147483392</int>
 												<string key="NSFrame">{{698, 0}, {16, 17}}</string>
 												<reference key="NSSuperview" ref="462174856"/>
-												<reference key="NSWindow"/>
 											</object>
 											<array class="NSMutableArray" key="NSTableColumns">
 												<object class="NSTableColumn" id="28386394">
@@ -590,7 +587,6 @@
 									</array>
 									<string key="NSFrame">{{1, 17}, {712, 311}}</string>
 									<reference key="NSSuperview" ref="462174856"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="459613446"/>
 									<reference key="NSDocView" ref="459613446"/>
 									<object class="NSColor" key="NSBGColor" id="50587360">
@@ -609,7 +605,6 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{698, 17}, {15, 311}}</string>
 									<reference key="NSSuperview" ref="462174856"/>
-									<reference key="NSWindow"/>
 									<reference key="NSTarget" ref="462174856"/>
 									<string key="NSAction">_doScroller:</string>
 									<double key="NSPercent">0.95176851749420166</double>
@@ -619,7 +614,6 @@
 									<int key="NSvFlags">-2147483392</int>
 									<string key="NSFrame">{{-100, -100}, {282, 15}}</string>
 									<reference key="NSSuperview" ref="462174856"/>
-									<reference key="NSWindow"/>
 									<bool key="NSEnabled">YES</bool>
 									<int key="NSsFlags">1</int>
 									<reference key="NSTarget" ref="462174856"/>
@@ -634,7 +628,6 @@
 									</array>
 									<string key="NSFrame">{{1, 0}, {712, 17}}</string>
 									<reference key="NSSuperview" ref="462174856"/>
-									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="847120676"/>
 									<reference key="NSDocView" ref="847120676"/>
 									<reference key="NSBGColor" ref="50587360"/>
@@ -644,7 +637,6 @@
 							</array>
 							<string key="NSFrame">{{5, 35}, {714, 329}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="1073596539"/>
 							<int key="NSsFlags">658</int>
 							<reference key="NSVScroller" ref="734887447"/>
@@ -659,7 +651,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{674, 366}, {19, 27}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSStepperCell" key="NSCell" id="676937821">
 								<int key="NSCellFlags">917024</int>
@@ -676,7 +667,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{368, 362}, {134, 32}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="72352066">
 								<int key="NSCellFlags">67239424</int>
@@ -698,12 +688,11 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{515, 364}, {156, 25}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="457669851">
 								<int key="NSCellFlags">67239424</int>
 								<int key="NSCellFlags2">4194304</int>
-								<string type="base64-UTF8" key="NSContents">U2VjdG9yIDAwMDAxIG9mIDEwMDAwCgo</string>
+								<string key="NSContents">Sector 00001 of 10000</string>
 								<reference key="NSSupport" ref="816468109"/>
 								<reference key="NSControlView" ref="331852093"/>
 								<object class="NSColor" key="NSBackgroundColor" id="445379834">
@@ -720,7 +709,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{614, -1}, {82, 32}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="316139504">
 								<int key="NSCellFlags">67239424</int>
@@ -744,7 +732,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{491, -1}, {123, 32}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="195673497">
 								<int key="NSCellFlags">67239424</int>
@@ -768,7 +755,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{3, 8}, {254, 18}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="738047505">
 								<int key="NSCellFlags">67239424</int>
@@ -792,7 +778,6 @@
 							<int key="NSvFlags">256</int>
 							<string key="NSFrame">{{379, -1}, {112, 32}}</string>
 							<reference key="NSSuperview" ref="48832613"/>
-							<reference key="NSWindow"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="859259674">
 								<int key="NSCellFlags">67239424</int>
@@ -812,7 +797,6 @@
 					</array>
 					<string key="NSFrameSize">{726, 397}</string>
 					<reference key="NSSuperview"/>
-					<reference key="NSWindow"/>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1920, 1178}}</string>
 				<string key="NSMinSize">{81, 24}</string>
@@ -2093,232 +2077,7 @@
 			<nil key="sourceID"/>
 			<int key="maxID">267</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes">
-			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
-				<object class="IBPartialClassDescription">
-					<string key="className">SectorEditorAsciiFieldCell</string>
-					<string key="superclassName">NSTextFieldCell</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SectorEditorAsciiFieldCell.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SectorEditorByteFieldCell</string>
-					<string key="superclassName">NSTextFieldCell</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SectorEditorByteFieldCell.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">SectorEditorWindow</string>
-					<string key="superclassName">NSWindowController</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="changeSector:">id</string>
-						<string key="confirmCancel:">id</string>
-						<string key="confirmOK:">id</string>
-						<string key="diskImageWriteProtect:">id</string>
-						<string key="displaySectorWindow:">id</string>
-						<string key="revertSector:">id</string>
-						<string key="saveSector:">id</string>
-						<string key="sectorNumberOK:">id</string>
-						<string key="sectorOK:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="changeSector:">
-							<string key="name">changeSector:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="confirmCancel:">
-							<string key="name">confirmCancel:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="confirmOK:">
-							<string key="name">confirmOK:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="diskImageWriteProtect:">
-							<string key="name">diskImageWriteProtect:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="displaySectorWindow:">
-							<string key="name">displaySectorWindow:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="revertSector:">
-							<string key="name">revertSector:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="saveSector:">
-							<string key="name">saveSector:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="sectorNumberOK:">
-							<string key="name">sectorNumberOK:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="sectorOK:">
-							<string key="name">sectorOK:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="outlets">
-						<string key="asciiTableColumn">id</string>
-						<string key="c00TableColumn">id</string>
-						<string key="c01TableColumn">id</string>
-						<string key="c02TableColumn">id</string>
-						<string key="c03TableColumn">id</string>
-						<string key="c04TableColumn">id</string>
-						<string key="c05TableColumn">id</string>
-						<string key="c06TableColumn">id</string>
-						<string key="c07TableColumn">id</string>
-						<string key="c08TableColumn">id</string>
-						<string key="c09TableColumn">id</string>
-						<string key="c10TableColumn">id</string>
-						<string key="c11TableColumn">id</string>
-						<string key="c12TableColumn">id</string>
-						<string key="c13TableColumn">id</string>
-						<string key="c14TableColumn">id</string>
-						<string key="c15TableColumn">id</string>
-						<string key="confirmOKButton">id</string>
-						<string key="diskImageWriteProtectButton">id</string>
-						<string key="errorButton">id</string>
-						<string key="errorField">id</string>
-						<string key="headerTableColumn">id</string>
-						<string key="sectorField">id</string>
-						<string key="sectorImageErrorSheet">id</string>
-						<string key="sectorNumberField">id</string>
-						<string key="sectorRevertButton">id</string>
-						<string key="sectorSaveButton">id</string>
-						<string key="sectorStepper">id</string>
-						<string key="sectorTableView">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
-						<object class="IBToOneOutletInfo" key="asciiTableColumn">
-							<string key="name">asciiTableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c00TableColumn">
-							<string key="name">c00TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c01TableColumn">
-							<string key="name">c01TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c02TableColumn">
-							<string key="name">c02TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c03TableColumn">
-							<string key="name">c03TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c04TableColumn">
-							<string key="name">c04TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c05TableColumn">
-							<string key="name">c05TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c06TableColumn">
-							<string key="name">c06TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c07TableColumn">
-							<string key="name">c07TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c08TableColumn">
-							<string key="name">c08TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c09TableColumn">
-							<string key="name">c09TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c10TableColumn">
-							<string key="name">c10TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c11TableColumn">
-							<string key="name">c11TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c12TableColumn">
-							<string key="name">c12TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c13TableColumn">
-							<string key="name">c13TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c14TableColumn">
-							<string key="name">c14TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="c15TableColumn">
-							<string key="name">c15TableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="confirmOKButton">
-							<string key="name">confirmOKButton</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="diskImageWriteProtectButton">
-							<string key="name">diskImageWriteProtectButton</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="errorButton">
-							<string key="name">errorButton</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="errorField">
-							<string key="name">errorField</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="headerTableColumn">
-							<string key="name">headerTableColumn</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorField">
-							<string key="name">sectorField</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorImageErrorSheet">
-							<string key="name">sectorImageErrorSheet</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorNumberField">
-							<string key="name">sectorNumberField</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorRevertButton">
-							<string key="name">sectorRevertButton</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorSaveButton">
-							<string key="name">sectorSaveButton</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorStepper">
-							<string key="name">sectorStepper</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBToOneOutletInfo" key="sectorTableView">
-							<string key="name">sectorTableView</string>
-							<string key="candidateClassName">id</string>
-						</object>
-					</dictionary>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">./Classes/SectorEditorWindow.h</string>
-					</object>
-				</object>
-			</array>
-		</object>
+		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBCocoaFramework</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencies">
